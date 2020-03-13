@@ -1,0 +1,16 @@
+<section class="puntajes">
+  <div class="container">
+    <ion-list>
+      <ion-item class="my-3" *ngFor="let i of usuarios">
+        <ion-buttons slot="start">
+          <ion-avatar class="my-2">
+            <img [src]="i.imagen">
+          </ion-avatar>
+        </ion-buttons>
+        <ion-label>{{i.nombre}} {{i.apellido}}</ion-label>
+        <span class="puntaje" slor="end">{{i.puntos}}</span>
+      </ion-item>
+    </ion-list>
+    <button type="button" class="text-center btn btn-success btn-jugar w-100" (click)="navigate('ruleta')">Comenzar a jugar</button>
+  </div>
+</section>

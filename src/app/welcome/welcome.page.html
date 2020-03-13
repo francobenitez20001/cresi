@@ -1,0 +1,115 @@
+<!-- <div class="contenedor">
+  <div class="logo">
+    <img src="../../assets/icon/logo.png" class="img-fluid" alt="">
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-6 opcion" (click)="navigation('/ruleta')">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-header text-center">Jugar</div>
+          <div class="card-body">
+            <ion-icon class="icon" name="play"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 opcion" (click)="navigation('/nosotros')">
+        <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header text-center">Quiénes somos</div>
+          <div class="card-body">
+            <ion-icon class="icon" name="people"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 opcion" (click)="navigation('/search')">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+          <div class="card-header text-center">Busqueda</div>
+          <div class="card-body">
+            <ion-icon class="icon" name="search"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 opcion" (click)="navigation('/profile')">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header text-center">Tu perfil</div>
+          <div class="card-body">
+            <ion-icon class="icon" name="person-circle"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end" (click)="toggleMenu()">
+      <ion-icon slot="icon-only" name="menu"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<app-menu></app-menu>
+
+<ion-content>
+  
+  <app-puntajes></app-puntajes>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-list>
+            <ion-row>
+              <ion-col size="11">
+                <ion-card-subtitle>Amor sin violencia</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon class="icon-novedad" name="heart"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-list>
+          <ion-card-title>Hace tu test</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          CrESI te ofrece un rápido test, en donde en menos de 5 minutos vas a poder conocer a nivel general si tu relación contiene actitudes no muy sanas. Hazlo Ahora!
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-row>
+            <ion-col size="11">
+              <ion-card-subtitle>Juego</ion-card-subtitle>
+            </ion-col>
+            <ion-col size="1">
+              <ion-icon class="icon-novedad" name="heart"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-card-title>Buscá lo que querés</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Te ofrecemos una amplia cantidad de información precisa y detallada para que puedas conocer todo lo que desees sobre eduación sexual integral
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-row>
+            <ion-col size="11">
+              <ion-card-subtitle>Juego</ion-card-subtitle>
+            </ion-col>
+            <ion-col size="1">
+              <ion-icon class="icon-novedad" name="heart"></ion-icon>
+            </ion-col>
+          </ion-row>
+          <ion-card-title>Jugá desde la web</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Estamos en todas las plataformas para que puedas disfrutar nuestra aplicación estés donde estés. Ingresá <a href="www.cresi.com.ar/app">aquí</a> para poder disfrutar la version web
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
