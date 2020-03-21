@@ -10,7 +10,7 @@
         <p class="categoria mt-3">{{categoria}}</p>
       </ion-col>
       <ion-col size="4">
-        <p class="tiempo my-2 mx-2">15</p>
+        <p class="tiempo my-2 mx-2" *ngIf="!verInfo" id="timer">{{time}}</p>
       </ion-col>
     </ion-row>
   </ion-toolbar>
@@ -21,31 +21,42 @@
     <div class="container pregunta">
       <ion-card>
         <ion-card-content class="txt-pregunta">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempora quod earum unde velit quos quaerat assumenda?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quis ratione earum velit placeat, nobis exercitationem facilis illum possimus voluptates
         </ion-card-content>
       </ion-card>
     </div>
-    <div class="container respuestas">
-      <ion-card class="mb-4">
-        <ion-card-content (click)="respuesta()" class="txt-respuesta">
-          Lorem ipsum dolor sit amet consectetur
-        </ion-card-content>
-      </ion-card>
-      <ion-card class="mb-4">
-        <ion-card-content (click)="respuesta()" class="txt-respuesta">
-          Lorem ipsum dolor sit amet consectetur
-        </ion-card-content>
-      </ion-card>
-      <ion-card class="mb-4">
-        <ion-card-content (click)="respuesta()" class="txt-respuesta">
-          Lorem ipsum dolor sit amet consectetur 
-        </ion-card-content>
-      </ion-card>
-      <ion-card class="mb-4">
-        <ion-card-content (click)="respuesta()" class="txt-respuesta">
-          Lorem ipsum dolor sit amet consectetur
-        </ion-card-content>
-      </ion-card>
+    <div class="container respuestas animated fadeIn" id="respuestas">
+      <!--revisar para unificarlo-->
+        <p class="text-center animated fadeIn correcto" id="respuesta" *ngIf="showRespuestaCorrecto">{{respuestaStatus}}</p>
+        <p class="text-center animated fadeIn incorrecto" id="respuesta" *ngIf="showRespuestaIncorrecto">{{respuestaStatus}}</p>
+      <div class="list-group">
+        <button class="list-group-item list-group-item-action mb-4 txt-respuesta" (click)="respuesta('Incorrecta','Correcta')">
+          Incorrecta
+        </button>
+        <button class="list-group-item list-group-item-action mb-4 txt-respuesta" (click)="respuesta('Correcta','Correcta')">
+          Correcta
+        </button>
+        <button class="list-group-item list-group-item-action mb-4 txt-respuesta" (click)="respuesta('Incorrecta','Correcta')">
+          Incorrecta
+        </button>
+        <button class="list-group-item list-group-item-action mb-4 txt-respuesta" (click)="respuesta('Incorrecta','Correcta')">
+          Incorrecta
+        </button>
+      </div>
     </div>
+    <ion-card class="masInformacion animated fadeIn fast" *ngIf="verInfo" color="{{categoria}}">
+      <ion-card-header>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title>Más información</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perferendis obcaecati nesciunt cupiditate aut? Eaque veritatis minima harum omnis, hic dolorum expedita? Itaque distinctio suscipit facilis quam eligendi illum ut sequi, eos modi natus expedita fugit reiciendis laboriosam ex pariatur accusantium? Neque voluptate sint velit consectetur dolorem cumque aliquam quod officia iste voluptatibus, ad sit sequi ipsam. Dolorem pariatur vero vel et accusamus enim voluptas? Vero sit sint, voluptatum a placeat magnam veritatis fugiat dolore laudantium molestias ipsum deleniti totam non, id rem perspiciatis temporibus. A, nesciunt optio ex nostrum accusamus consequuntur neque? Hic dolore soluta cupiditate deserunt ipsam ipsa.
+      </ion-card-content>
+    </ion-card>
   </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" routerLink="/ruleta" *ngIf="verInfo">
+    <ion-fab-button [color]="categoria">
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

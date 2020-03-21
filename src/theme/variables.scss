@@ -74,6 +74,109 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  //proyecto
+  --ion-color-proyecto: #e979db;
+  --ion-color-proyecto-rgb: 233,121,219;
+  --ion-color-proyecto-contrast: #000000;
+  --ion-color-proyecto-contrast-rgb: 0,0,0;
+  --ion-color-proyecto-shade: #cd6ac1;
+  --ion-color-proyecto-tint: #eb86df;
+
+  //derecho
+  --ion-color-derecho: #c4a73f;
+  --ion-color-derecho-rgb: 196,167,63;
+  --ion-color-derecho-contrast: #000000;
+  --ion-color-derecho-contrast-rgb: 0,0,0;
+  --ion-color-derecho-shade: #ac9337;
+  --ion-color-derecho-tint: #cab052;
+
+  //azar
+  --ion-color-azar: #888888;
+  --ion-color-azar-rgb: 136,136,136;
+  --ion-color-azar-contrast: #000000;
+  --ion-color-azar-contrast-rgb: 0,0,0;
+  --ion-color-azar-shade: #787878;
+  --ion-color-azar-tint: #949494;
+
+  //diversidad
+  --ion-color-diversidad: #854293;
+  --ion-color-diversidad-rgb: 133,66,147;
+  --ion-color-diversidad-contrast: #ffffff;
+  --ion-color-diversidad-contrast-rgb: 255,255,255;
+  --ion-color-diversidad-shade: #753a81;
+  --ion-color-diversidad-tint: #91559e;
+
+  //salud
+  --ion-color-salud: #7dd6b1;
+  --ion-color-salud-rgb: 125,214,177;
+  --ion-color-salud-contrast: #000000;
+  --ion-color-salud-contrast-rgb: 0,0,0;
+  --ion-color-salud-shade: #6ebc9c;
+  --ion-color-salud-tint: #8adab9;
+
+  //prevencion
+  --ion-color-prevencion: #d01940;
+  --ion-color-prevencion-rgb: 208,25,64;
+  --ion-color-prevencion-contrast: #ffffff;
+  --ion-color-prevencion-contrast-rgb: 255,255,255;
+  --ion-color-prevencion-shade: #b71638;
+  --ion-color-prevencion-tint: #d53053;
+
+}
+
+.ion-color-proyecto{
+  --ion-color-base:var(--ion-color-proyecto)!important;
+  --ion-color-base-rgb:var(--ion-color-proyecto-rgb)!important;
+  --ion-color-contrast:var(--ion-color-proyecto-contrast)!important;
+  --ion-color-contrast-rgb:var(--ion-color-proyecto-contrast-rgb)!important;
+  --ion-color-shade:var(--ion-color-shade)!important;
+  --ion-color-tint:var(--ion-color-tint)!important;
+}
+
+.ion-color-derecho{
+  --ion-color-base:var(--ion-color-derecho)!important;
+  --ion-color-base-rgb:var(--ion-color-derecho-rgb)!important;
+  --ion-color-contrast:var(--ion-color-derecho-contrast)!important;
+  --ion-color-contrast-rgb:var(--ion-color-derecho-contrast-rgb)!important;
+  --ion-color-shade:var(--ion-color-shade)!important;
+  --ion-color-tint:var(--ion-color-tint)!important;
+}
+
+.ion-color-azar{
+  --ion-color-base:var(--ion-color-azar)!important;
+  --ion-color-base-rgb:var(--ion-color-azar-rgb)!important;
+  --ion-color-contrast:var(--ion-color-azar-contrast)!important;
+  --ion-color-contrast-rgb:var(--ion-color-azar-contrast-rgb)!important;
+  --ion-color-shade:var(--ion-color-shade)!important;
+  --ion-color-tint:var(--ion-color-tint)!important;
+}
+
+.ion-color-diversidad{
+  --ion-color-base:var(--ion-color-diversidad)!important;
+  --ion-color-base-rgb:var(--ion-color-diversidad-rgb)!important;
+  --ion-color-contrast:var(--ion-color-diversidad-contrast)!important;
+  --ion-color-contrast-rgb:var(--ion-color-diversidad-contrast-rgb)!important;
+  --ion-color-shade:var(--ion-color-shade)!important;
+  --ion-color-tint:var(--ion-color-tint)!important;
+}
+
+.ion-color-salud{
+  --ion-color-base:var(--ion-color-salud)!important;
+  --ion-color-base-rgb:var(--ion-color-salud-rgb)!important;
+  --ion-color-contrast:var(--ion-color-salud-contrast)!important;
+  --ion-color-contrast-rgb:var(--ion-color-salud-contrast-rgb)!important;
+  --ion-color-shade:var(--ion-color-shade)!important;
+  --ion-color-tint:var(--ion-color-tint)!important;
+}
+
+.ion-color-prevencion{
+  --ion-color-base:var(--ion-color-prevencion)!important;
+  --ion-color-base-rgb:var(--ion-color-prevencion-rgb)!important;
+  --ion-color-contrast:var(--ion-color-prevencion-contrast)!important;
+  --ion-color-contrast-rgb:var(--ion-color-prevencion-contrast-rgb)!important;
+  --ion-color-shade:var(--ion-color-shade)!important;
+  --ion-color-tint:var(--ion-color-tint)!important;
 }
 
 @media (prefers-color-scheme: dark) {
